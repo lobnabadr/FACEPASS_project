@@ -1,0 +1,31 @@
+{
+  "name": "FacePass",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Lock and Unlock websites with your face ",
+  "icons": {
+    "16": "icons/Glogo.png",
+    "32": "icons/Glogo.png",
+    "48": "icons/Glogo.png",
+    "128": "icons/Glogo.png"
+  },
+  "action": {
+    "default_popup": "HTML/login_page/login.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.facebook.com/",
+        "https://*.udemy.com/join/login-popup/*",
+        "https://*.github.com/login"
+      ],
+      "js": ["contentScript.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "tabs", "activeTab", "scripting"]
+}

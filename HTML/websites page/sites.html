@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sites.css"/>
+    
+  </head>
+  <body>
+    
+    <nav>
+      <div class="container">
+        <div class="back">
+        <a href="..\main page\main.html">
+
+        <a href="../main page/main.html">    
+
+        <img src="images/white_arrow.png" alt="white_arrow" />
+        </a>
+        </div>
+        <div class="page-name">
+        <h3>Websites</h3>
+      </div>
+    </nav>
+
+    <!-- websites section  -->
+    <div class="sites">
+      <div class="container" id="container">
+      </div>
+    </div>
+
+    <!-- add-site section  -->
+    <div class="add-site" id="add_site">+</div>
+          
+    <div class="popup" >
+      <div class="popup-content">
+        <div class="popup-close" id="popup_close">X</div>
+        <img src="../websites page/images/3circle_with_logo.png"  class="image">
+        <!-- <i class="icon fas fa-close" id="close"></i> -->
+        <header>Add Website</header>
+        <form action="#" >
+
+          <div class="field name">
+            <div class="input-area">
+              <input type="text" placeholder="Web Name">
+              <i class="icon fas fa-user"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Name can't be blank</div>
+          </div>
+
+          <div class="field url">
+            <div class="input-area">
+              <input type="text" placeholder="Site URL" id="url">
+              <i class="icon fas fa-link"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Link can't be blank</div>
+          </div>
+
+          <div class="field email">
+            <div class="input-area">
+              <input type="email" placeholder="Email / UserName">
+              <i class="icon fas fa-lock"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Email/UserName can't be blank</div>
+          </div>
+
+          <input type="submit" value="ADD" id="add">
+        </form>
+      </div>
+    </div>
+    <script src="sites.js"></script>
+  </body>
+</html>

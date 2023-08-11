@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  width: 400px;
+  height: 600px;
+}
+/**main div**/
+.container {
+  font-family: League Spartan Regular;
+}
+.head {
+  display: flex;
+  color: white;
+  background-image: linear-gradient(to left, #006f43, #89dc66);
+  height: 55px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.head a {
+  width: 20%;
+  cursor: default;
+}
+.head h1 {
+  margin-left: 75px;
+}
+.head img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin-right: 140px;
+  transition: 0.4s;
+  padding-top: 12px;
+}
+.head img:hover {
+  cursor: pointer;
+  transform: scale(110%);
+}
+.username {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input_error .error {
+  margin-left: 5px;
+}
+.error {
+  color: red;
+  padding-top: 5px;
+  text-align: center;
+}
+.username.invalid label {
+  color: red;
+}
+.username.invalid input {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.photo img {
+  height: 60px;
+  width: 60px;
+}
+
+.Edit input {
+  border-color: #077545;
+  border-style: solid;
+  border-radius: 8px;
+  height: 25px;
+  width: 70%;
+}
+.Edit label {
+  font-size: 14px;
+  padding: 0px 0px 5px 5px;
+  font-weight: 600;
+}
+.current,
+.new,
+.confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.password {
+  margin-top: 20px;
+}
+.password .photo {
+  padding-bottom: 10px;
+}
+.new {
+  padding-top: 10px;
+}
+.confirm {
+  padding-top: 10px;
+}
+.current.invalid label,
+.new.invalid label,
+.confirm.invalid label {
+  color: red;
+}
+.current.invalid input,
+.new.invalid input,
+.confirm.invalid input {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+.btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.btn button {
+  border-radius: 20px;
+  border-style: none;
+  background-color: #077545;
+  color: white;
+  height: 30px;
+  width: 150px;
+  padding: 0px 15px;
+  transition: 0.4s;
+  margin-bottom: 20px;
+}
+.btn button:hover {
+  background-image: linear-gradient(to right, #006f43, #89dc66);
+  border-radius: 40px;
+  transform: scale(95%);
+  cursor: pointer;
+}
+.collapsible {
+  background-color: white;
+  color: #099e62;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: solid 1px #099e62;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #006f43;
+  color: white;
+}
+.collapsible:hover::after {
+  color: white;
+}
+
+.collapsible:after {
+  content: "\25bc";
+  color: #099e62;
+  font-weight: bold;
+  float: right;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25b2";
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Setting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="acc.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <a href="../main.html">
+          <img src="../images/white_arrow.png" alt="back" />
+        </a>
+        <h1>Setting</h1>
+      </div>
+      <div class="Edit">
+        <div class="Uname">
+          <button class="collapsible">Change Username</button>
+          <div class="content">
+            <div class="photo">
+              <img src="../images/profile.png" />
+            </div>
+            <div class="name">
+              <div class="input_error">
+                <div class="username" id="user_name">
+                  <label>UserName</label>
+                  <input type="text" required />
+                </div>
+                <div class="error" id="error"></div>
+              </div>
+            </div>
+            <div class="btn">
+              <button id="save_btn">Change Username</button>
+            </div>
+          </div>
+        </div>
+        <div class="password">
+          <button class="collapsible">Change Password</button>
+          <div class="content">
+            <div class="photo">
+              <img src="../images/password-logo.png" />
+            </div>
+            <div class="current" id="current_password">
+              <label for="current">Current Password</label>
+              <input id="current" type="password" required />
+            </div>
+            <div class="error" id="error"></div>
+            <div>
+              <div class="new" id="new_password">
+                <label for="new">New Password</label>
+                <input id="new" type="password" required />
+              </div>
+              <div class="error" id="error"></div>
+            </div>
+            <div>
+              <div class="confirm" id="confirm_password">
+                <label for="confirm">Confirm Password</label>
+                <input id="confirm" type="password" required />
+              </div>
+              <div class="error" id="error"></div>
+            </div>
+            <div class="btn">
+              <button id="pass_btn">Change Password</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="acc.js"></script>
+  </body>
+</html>
